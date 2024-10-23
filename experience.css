@@ -1,0 +1,43 @@
+body {
+    background-color: #62B6CB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div{
+    height: 350px;
+    width: 350px;
+    border-radius: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: #1C3144;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    position: relative;
+    top:100px;
+    /* left: 50%; */
+}
+
+div p {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    /* padding: 0 3rem 0 3rem; */
+    padding: 1rem 1rem 0 1rem;
+}
+div a {
+    text-decoration: none;
+
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+} */

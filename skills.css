@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Sans", sans-serif;
+    /* background-color: #FFF1DB; */
+/* .skill-container */
+}
+.skill-container  h1{
+    display: block;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    color: #0B8494;
+    position: relative;
+    padding-top: 10px;
+    top: 10px;
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2rem;
+    /* height: 150vh; */
+    
+    padding: 0 150px 0 150px;
+}
+.skill-container .skill {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #536493;
+    margin: 20px;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #758694;
+    color: #125B9A;
+
+    /* animation-range: entry 0 cover 1%; */
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+}
+.skill-container .skill:hover{
+    /* height: 170px; */
+    /* background-color: #0B8494; */
+    /* width: 100px; */
+    box-shadow: 0 4px 8px 10px #125B9A;
+    /* color: #F05A7E; */
+}
+
+/* .skill-container .skill h2 {
+    /* color: black; */
+/* } */
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100px); */
+        /* clip-path: inset(10% 10% 0 0 ); */
+    }
+    to {
+        opacity: 1;
+        /* scale: 1; */
+        /* transform: translateX(-0px); */
+        /* clip-path: inset(0 0 0 0); */
+    }
+}
+
+@media (max-width : 1024px) and (min-width : 600px) {
+    .skill-container {
+        flex-wrap: wrap;
+    }
+}

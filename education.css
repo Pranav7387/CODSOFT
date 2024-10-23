@@ -1,0 +1,43 @@
+body{
+    font-family: "Poppins", sans-serif;
+    color: #201E43;
+    background: url('https://cdn.wallpapersafari.com/32/24/GLWRuH.jpg');
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    background-color: #D4BDAC;
+    margin: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+.card-heading {
+    /* background-color: aqua; */
+    text-wrap: wrap;
+    top: -19px;
+    padding: 0 15px;
+    box-shadow: 0px 0px 4px;
+    background-color: #EF5A6F;
+    border-radius: 20px 20px 0 0;
+    color: #201E43;
+    position: relative;
+}
+h3{
+    text-align: center;
+}
+p{
+    padding: 0 20px;
+}
+h2, h4{
+    text-align: center;
+}
+p {
+    text-align: center;
+}

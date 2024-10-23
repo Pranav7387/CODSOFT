@@ -1,0 +1,83 @@
+body {
+    font-family: "Noto Sans", system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #3cffbe;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+}
+
+nav ul div {
+    margin: 0 50px;
+}
+
+.name {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(255, 145, 0);
+    font-weight: 700;
+    cursor: cell;
+    margin-right: 200px;
+    padding: 0 20px;
+}
+
+nav ul div a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #000;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    right: -300px;
+    top: 80px;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(154, 21, 21);
+    transition: right 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul div {
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    padding: 14px 30px;
+}
+
+#check:checked ~ .nav .sidebar {
+    right: 0;
+}
